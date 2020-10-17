@@ -276,8 +276,8 @@ int main()
 		}
 		return s;
 		},
-		[&](stack<int> s) {
-		s.sort(cmp);
+		[&](stack<int> *s) {
+		s->sort(cmp);
 		},
 		20);
 }
